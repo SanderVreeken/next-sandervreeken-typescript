@@ -15,8 +15,8 @@ import {
 
 function makeClient() {
     const httpLink = new HttpLink({
-        // https://studio.apollographql.com/public/spacex-l4uc6p/
-        uri: '/api',
+        uri: 'https://next-sandervreeken-typescript-532qnnm9o.vercel.app/api'
+        // uri: 'http://localhost:3000/api',
     });
 
     return new NextSSRApolloClient({
