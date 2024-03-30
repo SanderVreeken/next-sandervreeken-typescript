@@ -16,7 +16,7 @@ import {
 function makeClient() {
     const httpLink = new HttpLink({
         // https://studio.apollographql.com/public/spacex-l4uc6p/
-        uri: 'http://localhost:3000/api',
+        uri: '/api',
     });
 
     return new NextSSRApolloClient({
@@ -29,7 +29,7 @@ function makeClient() {
                     }),
                     httpLink,
                 ])
-                : httpLink,
+                : httpLink
     });
 }
 
