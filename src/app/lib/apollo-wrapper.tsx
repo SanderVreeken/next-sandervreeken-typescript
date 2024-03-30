@@ -15,7 +15,7 @@ import {
 
 function makeClient() {
     const httpLink = new HttpLink({
-        uri: 'https://next-sandervreeken-typescript-git-main-sander-vreekens-projects.vercel.app/api'
+        uri: 'next-sandervreeken-typescript.vercel.app/api'
         // uri: 'http://localhost:3000/api',
     });
 
