@@ -14,8 +14,10 @@ import {
 } from "@apollo/experimental-nextjs-app-support/ssr";
 
 function makeClient() {
+    console.log(`${process.env.NEXT_PUBLIC_BASE_URL}/api`)
+
     const httpLink = new HttpLink({
-        uri: 'next-sandervreeken-typescript.vercel.app/api'
+        uri: `${process.env.NEXT_PUBLIC_BASE_URL}/api`
         // uri: 'http://localhost:3000/api',
     });
 
