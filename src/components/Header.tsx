@@ -1,5 +1,6 @@
-import getHeaderFooterChild from '@/helpers/getHeaderFooterChild'
 import Logo from './Logo'
+
+import getHeaderFooterChild from '@/helpers/getHeaderFooterChild'
 
 const Header = () => {
     return (

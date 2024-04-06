@@ -1,7 +1,7 @@
 import Button from '@/components/Button'
 import Logo from '@/components/Logo'
+
 import { headerFooterButtons } from '@/elements/buttons'
-import EButton from '@/types/Button'
 
 /**
    * Returns child for Header and Footer component since they share the same elements.

@@ -1,5 +1,7 @@
 import { MdOutlineWavingHand } from 'react-icons/md'
+
 import Button from './Button'
+
 import EButton from '@/types/Button'
 
 const Banner = () => {

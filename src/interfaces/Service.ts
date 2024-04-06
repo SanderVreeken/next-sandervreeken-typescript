@@ -1,11 +1,12 @@
 export default interface IService {
-    _id: string
+    _id: { $oid: string }
     calendlyHref: string
     description: string
     euros: number
     minutes: number
     title: string
     topics: [string]
-    createdAt: number
-    updatedAt: number
+    createdAt: { $date: { $numberLong: string } }
+    updatedAt: { $date: { $numberLong: string } }
+    __v: number
 }

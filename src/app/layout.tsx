@@ -1,10 +1,9 @@
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
-import './globals.css';
-import Header from '@/components/Header';
+import type { Metadata } from 'next'
+import { Poppins } from 'next/font/google'
 
-import Footer from '@/components/Footer';
-import { ApolloWrapper } from './lib/apollo-wrapper';
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import './globals.css';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
@@ -21,13 +20,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${poppins.className} flex flex-col items-center min-h-screen text-light-black`}>
-        <ApolloWrapper>
-          <div className='pb-16 pt-16 px-7 w-full desktop:pt-8 desktop:px-4 desktop:w-1100'>
-            <Header />
-            {children}
-          </div>
-          <Footer />
-        </ApolloWrapper>
+        <div className='pb-16 pt-16 px-7 w-full desktop:pt-8 desktop:px-4 desktop:w-1100'>
+          <Header />
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   )

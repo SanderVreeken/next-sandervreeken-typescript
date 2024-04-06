@@ -1,4 +1,5 @@
 import Button from './Button'
+
 import IService from '@/interfaces/Service'
 import EButton from '@/types/Button'
 
@@ -38,7 +39,7 @@ const Service = ({ service }: Props) => {
    */
 const getButtons = (service: IService) => {
     return [{
-        href: `/services/${service._id}`,
+        href: `/services/${service._id.$oid}`,
         title: 'Learn more',
         type: EButton.PrimaryDark
     }, {

@@ -1,9 +1,7 @@
-import IArticle from '@/interfaces/Article'
-import Button from './Button'
-import IService from '@/interfaces/Service'
-import EButton from '@/types/Button'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import IArticle from '@/interfaces/Article'
 
 interface Props {
     article: IArticle

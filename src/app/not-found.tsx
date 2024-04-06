@@ -1,6 +1,8 @@
-import Button from '@/components/Button'
-import EButton from '@/types/Button'
 import Link from 'next/link'
+
+import Button from '@/components/Button'
+
+import EButton from '@/types/Button'
 
 export default function NotFound() {
     return (

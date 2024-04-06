@@ -1,22 +1,18 @@
-'use client'
-
-export const dynamic = "force-dynamic"
-
+import { promises as fs } from 'fs'
+import Image from 'next/image'
 import { MdOutlineWavingHand } from 'react-icons/md'
 
+import Banner from '@/components/Banner'
 import Button from '@/components/Button'
-import EButton from '@/types/Button'
-import Image from 'next/image'
+import CalendlyPopup from '@/components/CalendlyPopup'
 import Service from '@/components/Service'
 
-import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
-import { Suspense } from 'react'
-import { servicesQuery } from './api/graphql/queries/Service'
-import Banner from '@/components/Banner'
-import CalendlyPopup from '@/components/CalendlyPopup'
+import IService from '@/interfaces/Service'
+import EButton from '@/types/Button'
 
-export default function Home() {
-  const { data: services } = useSuspenseQuery(servicesQuery)
+export default async function Home() {
+  const file = await fs.readFile(process.cwd() + '/src/json/services.json', 'utf8');
+  const services: [IService] = JSON.parse(file)
 
   return (
     <main className='flex flex-col gap-32 desktop:gap-40'>
@@ -61,14 +57,12 @@ export default function Home() {
       <div>
         <h2 className='mb-8 text-3xl'>My services</h2>
         <div className='flex flex-col gap-10'>
-          <Suspense fallback={<div>Loading...</div>}>
-            {services.readServices.map((service, index) => (
-              <Service
-                key={index}
-                service={service}
-              />
-            ))}
-          </Suspense>
+          {services.map((service, index) => (
+            <Service
+              key={index}
+              service={service}
+            />
+          ))}
         </div>
       </div>
       <Banner />

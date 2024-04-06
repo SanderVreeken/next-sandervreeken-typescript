@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "6607ec37e2c921f78c37761e"
+  },
+  "description": "Often you will find yourself copy-pasting data from other files into a consolidated workbook to further investigate the data from there. This process of copy-pasting data might take an tremendous amount of time. We could use this time to do more important things after we have automated this process using some simple VBA code.",
+  "href": "https://medium.com/geekculture/how-to-import-data-from-another-workbook-in-excel-using-vba-3dc7e3604755",
+  "imageHref": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*vKplzg-aQ96i_p30-YeYPA.png",
+  "title": "How-to Import Data From Another Workbook in Excel Using VBA",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1711795255812"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1711795255812"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6607f257ecbde95646d65fb7"
+  },
+  "description": "I use VBA, or Visual Basic for Applications, to automate my repetitive tasks. This saves me quite a lot of time in my day-to-day life.",
+  "href": "https://www.freecodecamp.org/news/automate-repetitive-tasks-in-excel-with-vba/",
+  "imageHref": "https://www.freecodecamp.org/news/content/images/size/w2000/2021/07/Thumbnail2.png",
+  "title": "Visual Basic Excel Tutorial – How to Automate Repetitive Tasks in a Spreadsheet",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1711796823723"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1711796823723"
+    }
+  },
+  "__v": 0
+}]

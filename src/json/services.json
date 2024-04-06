@@ -1,0 +1,70 @@
+[
+  {
+    "_id": {
+      "$oid": "660809c45be531263aad11cc"
+    },
+    "calendlyHref": "https://calendly.com/sandervreeken/excel-basics-course",
+    "description": "Welcome to my Basic Excel Course! Whether you're a complete beginner or looking to refresh your skills, this course is designed to provide you with a solid foundation in Excel. From navigating the interface to mastering essential functions and formulas, you'll gain the confidence and expertise needed to efficiently manage data, create spreadsheets, and perform basic analysis.",
+    "euros": 90,
+    "minutes": 60,
+    "title": "Excel Basics Course",
+    "topics": [
+      "Introduction to Excel and its importance",
+      "Navigating the Excel interface",
+      "Entering and formatting data",
+      "Understanding basic formulas and functions",
+      "Working with rows, columns, and cells",
+      "Creating and managing worksheets",
+      "Sorting and filtering data",
+      "Creating simple charts and graphs",
+      "Using basic conditional formatting",
+      "Introduction to data analysis tools",
+      "Tips and tricks for efficient Excel usage"
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1711802820192"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1711802820192"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66080a155be531263aad11ce"
+    },
+    "calendlyHref": "https://calendly.com/sandervreeken/vba-basics-course",
+    "description": "Welcome to my Basic VBA for Excel Course! Are you ready to supercharge your Excel skills and automate repetitive tasks? In this course, we'll introduce you to the world of Visual Basic for Applications (VBA) and how it can revolutionize your Excel experience. Whether you're a beginner or looking to enhance your proficiency, our step-by-step approach will empower you to create macros, streamline workflows, and unlock the full potential of Excel.",
+    "euros": 90,
+    "minutes": 60,
+    "title": "VBA Basics Course",
+    "topics": [
+      "Introduction to VBA and its role in Excel",
+      "Understanding the VBA Editor",
+      "Recording and editing macros",
+      "Writing and executing VBA code",
+      "Variables, data types, and constants in VBA",
+      "Control structures: If statements, loops, and more",
+      "Working with ranges and cells in VBA",
+      "User-defined functions (UDFs)",
+      "Interacting with worksheets and workbooks",
+      "Error handling and debugging techniques",
+      "Tips for efficient VBA coding and best practices"
+    ],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1711802901945"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1711802901945"
+      }
+    },
+    "__v": 0
+  }
+]
