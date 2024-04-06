@@ -1,3 +1,7 @@
+'use client'
+
+import { useParams } from 'next/navigation'
+
 import Banner from '@/components/Banner'
 import Button from '@/components/Button'
 import CalendlyEmbed from '@/components/CalendlyEmbed'
@@ -5,11 +9,12 @@ import CalendlyEmbed from '@/components/CalendlyEmbed'
 import IService from '@/interfaces/Service'
 import EButton from '@/types/Button'
 
-interface Props {
-    service: IService
-}
+import services from '../../../json/services.json'
 
-export default function Services({ service }: Props) {
+export default function Services() {
+    const params = useParams<{ id: string }>()
+
+    const service = (services as [IService]).filter((service: IService) => service._id.$oid === params.id)[0]
 
     const { calendlyHref, description, euros, minutes, topics, title } = service
 
@@ -55,7 +60,6 @@ export default function Services({ service }: Props) {
                 </div>
                 <CalendlyEmbed url={`${calendlyHref}?hide_event_type_details=1&hide_gdpr_banner=1`} />
             </div>
-
             <Banner />
         </main>
     )

@@ -5,8 +5,6 @@ import Service from '@/components/Service'
 
 import IService from '@/interfaces/Service'
 
-export const dynamic = "force-dynamic"
-
 export default async function Services() {
     const file = await fs.readFile(process.cwd() + '/src/json/services.json', 'utf8');
     const services: [IService] = JSON.parse(file)
